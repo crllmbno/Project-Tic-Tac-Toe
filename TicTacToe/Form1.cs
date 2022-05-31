@@ -146,7 +146,7 @@ namespace TicTacToe
 
             if (winner)
             {
-                MessageBox.Show("yey");
+                MessageBox.Show("YEY!!");
                 box1.Text = "";
                 box1.Enabled = true;
                 box2.Text = "";
