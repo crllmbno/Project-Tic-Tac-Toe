@@ -127,16 +127,22 @@ namespace TicTacToe
         }
         private void checkwin()
         {
+            bool winner = false;
             if ((box1.Text == box2.Text) && (box2.Text == box3.Text) && (!box1.Enabled))
-                MessageBox.Show("yeet");
+                winner = true;
             else if ((box4.Text == box5.Text) && (box5.Text == box6.Text) && (!box4.Enabled))
-                MessageBox.Show("yeet");
+                winner = true;
             else if ((box7.Text == box8.Text) && (box8.Text == box9.Text) && (!box7.Enabled))
-                MessageBox.Show("yeet");
+                winner = true;
             else if ((box1.Text == box5.Text) && (box5.Text == box9.Text) && (!box1.Enabled))
-                MessageBox.Show("yeet");
+                winner = true;
             else if ((box3.Text == box5.Text) && (box5.Text == box7.Text) && (!box3.Enabled))
-                MessageBox.Show("yeet");
+                winner = true;
+
+            if (winner)
+            {
+                MessageBox.Show("yey");
+            }
         }
         private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -158,6 +164,7 @@ namespace TicTacToe
             box8.Enabled = true;
             box9.Text = "";
             box9.Enabled = true;
+            bool winner = false;
         }
     }
 }
