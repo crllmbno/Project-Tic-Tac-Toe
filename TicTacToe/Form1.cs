@@ -3,7 +3,6 @@ namespace TicTacToe
     public partial class TicTacWindow : Form
     {
         bool order = true;
-        int counter = 0;
         public TicTacWindow()
         {
             InitializeComponent();
@@ -142,7 +141,26 @@ namespace TicTacToe
             if (winner)
             {
                 MessageBox.Show("yey");
+                box1.Text = "";
+                box1.Enabled = true;
+                box2.Text = "";
+                box2.Enabled = true;
+                box3.Text = "";
+                box3.Enabled = true;
+                box4.Text = "";
+                box4.Enabled = true;
+                box5.Text = "";
+                box5.Enabled = true;
+                box6.Text = "";
+                box6.Enabled = true;
+                box7.Text = "";
+                box7.Enabled = true;
+                box8.Text = "";
+                box8.Enabled = true;
+                box9.Text = "";
+                box9.Enabled = true;
             }
+            bool winner = false;
         }
         private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
